@@ -1,0 +1,126 @@
+/* set up CSS attributes for font, background-color, button color, and true/false display */
+:root {
+    /* font sizes */
+    --navFontSize: 1rem;
+    --titleFontSize: 3.052rem;
+    --questionFontSize: 2.441rem;
+    --answerFontSize: 1.563rem;
+    --responseFontSize: .8rem;
+    /* colors */
+    --glassBackground: rgba(255, 255, 255, .3);
+    --primaryColor: #ffffff;
+}
+/* set up attributes for when a button is hovered and clicked */
+/* default styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.2em;
+    padding: 100px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 30px;
+    color: var(--primaryFontColor);
+    
+}
+
+/* custom styling */
+.quizNavigation {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--glassBackground);
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: rgba(255, 255, 255, .3);
+    
+}
+.quizNavigation li {
+    display: inline;
+    font-size: var(--navFontSize);
+    padding: 50px;
+    color: var(--primaryColor);
+    z-index: 1;
+}
+.quizNavigation li a {
+    text-decoration: none;
+    color: var(--primaryFontColor);
+}
+.content {
+    width: 70%;
+    color: var(--primaryColor);
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: var(--glassBackground);
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: rgba(255, 255, 255, .3);
+}
+#title {
+    font-size: var(--titleFontSize);
+    text-decoration: underline;
+}
+#quizDescription {
+    margin-top: 40px;
+}
+#quizDescription p span {
+    
+    font-size: var(--questionFontSize);
+}
+/* .generalButton {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: var(--answerFontSize);
+}
+.generalButton:hover {
+    background-color: rgba(255, 255, 255, .3);
+
+} */
+#beginButton {
+    width: 125px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+#beginButton:hover {
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+}
+.answerChoice {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    list-style: none;
+    border: 3px solid #fff;
+    border-radius: 10%;
+    border-style: outset;
+}
+.answerChoice:hover {
+    background-color: rgb(46, 46, 46);
+    border-style: inset;
+    border-color: rgb(46, 46, 46);
+}
+.highscoreHeader {
+    font-size: var(--titleFontSize);
+    list-style: none;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.highscoreNode {
+    list-style: none;
+    text-decoration: none;
+    margin: 15px;
+    font-size:var(--answerFontSize);
+}

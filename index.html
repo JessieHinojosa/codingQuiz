@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Test Your Knowledge</title>
+</head>
+<body>
+<!-- 
+#use semantic html
+#code only the landing page
+#must have a view high score link and a timer set to 0 displayed
+#have a heading "javaScript quiz" with a brief description of quiz
+#must have a start button -->
+<nav>
+  <ul class="quizNavigation">
+    <li id="highScoresList">HighScores</li>
+    <li id="restartLink">Restart Quiz</li>
+    <li id="timerDisplay">60 Seconds</li>
+  </ul>
+</nav>
+
+<main class="content">
+    <h1 id="title">Test Your Knowledge with JavaScript</h1>
+    <article  id="quizDescription">
+      <p>
+        <span>So you think you know javaSript!</span><br><br>
+        Test your knowledge with this timed javaScript quiz. You will have 3 minutes to answer 10 randomly selected questions about the most poplular
+        web development language out there. Every question you get right, you will be awarded 10 seconds on your timer. Now for every question you get 
+        wrong, your timer will be deducted by 15 seconds. Your time left over will be logged into the highscores list. So, test yourself and try to get
+        the highest time you can.
+      </p>
+      <br>
+      <button id="beginButton">Start Quiz</button>
+    </article>
+</main>
+<script src="./assets/script.js"></script>
+</body>
+</html>
